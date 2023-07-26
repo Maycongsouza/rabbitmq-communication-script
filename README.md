@@ -24,4 +24,4 @@ Dica: Execute de forma que ele salve o log em um arquivo separado, caso você pr
 
 ## Receiver
 
-O receiver.py tem a responsabilidade de ler as mensagens na fila e entregar ao Odoo. Como isso é feito através de uma API, podemos garantir que a mensagem foi entregue antes de deletar da fila. Se a resposta for 200, significa que a mensagem foi recebida e processada, qualquer coisa diferente disso, a mensagem é mantida no RabbitMQ.
+O receiver.py tem a responsabilidade de ler as mensagens na fila e entregar ao Odoo. Como isso é feito através de uma API (request), podemos garantir que a mensagem foi entregue antes de deletar da fila. Se a resposta for 200, significa que a mensagem foi recebida e processada, qualquer coisa diferente disso, a mensagem é mantida no RabbitMQ.
