@@ -14,6 +14,10 @@ Em um sistema Linux, você pode executar o RabbitMQ através de um único comand
 
 ```docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3.12-management```
 
+Ele poderá ser acesso atraés de localhost:numero_da_sua_porta
+
+Usuário e senha padrão: guest / guest
+
 ## Listen
 
 Depois de colocar o RabbitMQ para rodar, é hora de executar o listen.py. Depois de definir a máquina que ele irá ser executado, basta colocar o script para rodar.
